@@ -1,0 +1,16 @@
+.collection .collection-item {
+  cursor: pointer;
+}
+nav {
+  display: cnone;
+}
+.pt-5 {
+  padding-top: 50px;
+}
+.cssCode {
+  border: 1px solid #949494;
+  background: #eeeeee;
+  border-radius: 5px;
+  min-height: 60px;
+  margin-bottom: 20px;
+}
