@@ -1,5 +1,5 @@
 // Copy text to clipboard
-if(document.querySelector("#copyCode") !== undefined){ console.log("this");
+
   document.querySelector("#copyCode").addEventListener("click", (e)=>{
     
     // Get Code from UI
@@ -22,4 +22,3 @@ if(document.querySelector("#copyCode") !== undefined){ console.log("this");
     /* Alert the copied text */
     alert("Copied the text: " + code);
   });
-}

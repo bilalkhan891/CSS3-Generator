@@ -31,9 +31,10 @@ function updateValues(){
 let render = function(){
   updateValues();
   let style = { 
-    textShadow: `${hl}px ${vl}px ${bs}px ${clr}`
+    textShadow: `${hl}px ${vl}px ${bs}px ${clr}`,
   };
   Object.assign(tContainer.style, style);
+
 
   document.querySelector("#cssContainer .cssCode").innerHTML = `text-shadow: ${style.textShadow};`;
 };

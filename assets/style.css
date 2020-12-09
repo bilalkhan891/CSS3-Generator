@@ -3,9 +3,19 @@
 }
 nav {
   display: cnone;
+  background-color: #3242c9;
 }
 .pt-5 {
   padding-top: 50px;
+}
+button#copyCode {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+
+div#cssContainer {
+  position: relative;
 }
 .cssCode {
   border: 1px solid #949494;
