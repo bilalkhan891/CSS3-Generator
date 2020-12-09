@@ -17,12 +17,12 @@ let st   = "",
     sp   = "",
     clr  = "";
 
+// loop through each input to add Event Listener
 inputs.forEach(input=>{
   input.addEventListener("change", (e)=>{
     render();
   });
 });
-
 
 // Update all Values on change
 function updateValues(){
@@ -34,6 +34,8 @@ function updateValues(){
   clr   = document.querySelector("#colorCode").value;
 }
 
+
+// updating UI
 let render = function(){
   updateValues();
   let style = { 
@@ -41,7 +43,7 @@ let render = function(){
   };
   Object.assign(tContainer.style, style);
 
-  document.querySelector("#cssContainer .cssCode").innerText = "box-shadow: " + style.boxShadow + ";";
+  document.querySelector("#cssContainer .cssCode").innerHTML = `-webkit-box-shadow: ${style.boxShadow};<br>box-shadow: ${style.boxShadow};`;
 };
 
 render();
