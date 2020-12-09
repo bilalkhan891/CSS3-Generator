@@ -41,9 +41,7 @@ let render = function(){
   updateValues();
   let style = { 
     transform: `scale(${scl}) rotate(${rtt}deg) translate(${trX}px, ${trY}px) skew(${skX}deg, ${skY}deg)`
-  }; 
-  console.log(style.transform);
-  tContainer.style.transform = style.transfrom;
+  };   
   Object.assign(tContainer.style, style);
 
   document.querySelector("#cssContainer .cssCode")
@@ -55,3 +53,4 @@ let render = function(){
 };
 
 render();
+

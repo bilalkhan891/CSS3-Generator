@@ -12,7 +12,7 @@
 <body>
   <nav>
     <div class="nav-wrapper">
-      <a href="#" class="brand-logo center">
+      <a href="/" class="brand-logo center">
         CSS3 Generator - Transform
       </a>
     </div>
@@ -31,7 +31,7 @@
         <div class="card">
           <div class="card-content ">
             <span class="card-title">
-              <h5>Use Range</h5>
+              <!-- <h5>Use Range</h5> -->
             </span>
             <form action="#"> 
               <p class="range-field">
@@ -46,16 +46,16 @@
                   <input type="range" id="rotate" value="5" min="-100" max="100" />
                 </label>
               </p>
-              <p class="range-field">
+              <p class="range-field two-range">
                 <label>
-                  <span>Translate</span>
+                  <span class="title">Translate</span>
                   <input type="range" id="translateX" value="5" min="-200" max="200" />
                   <input type="range" id="translateY" value="5" min="-200" max="200" />
                 </label>
               </p>
-              <p class="range-field">
+              <p class="range-field two-range">
                 <label>
-                  <span>Skew</span>
+                  <span class="title">Skew</span>
                   <input type="range" id="skewX" value="5" min="-50" max="50" />
                   <input type="range" id="skewY" value="5" min="-50" max="50" />
                 </label>
@@ -63,7 +63,7 @@
             </form>
             <div id="cssContainer">
               <div class="cssCode"></div>
-              <button id="copyCode" class="btn">Copy</button>
+              <button id="copyCode" class="btn">Copy</button> 
             </div>
           </div>
         </div>
@@ -72,8 +72,18 @@
     </div>
   </div>
 
+
+  <footer>
+    <div class="footer-copyright">
+      <div class="container">
+      © 2021 Copyright
+      <a class="right" target="_blank" href="https://bilalafridi.com">Author: Bilal Afridi</a>
+      </div>
+    </div>
+  </footer>
   <!-- Compiled and minified JavaScript -->
   <script src="./assets/materialize/materialize.js"></script>
+  <script src="./assets/main.js"></script>
   <script src="./assets/transform/transform.js"></script>
 </body>
 </html>

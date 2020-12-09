@@ -13,12 +13,19 @@
   <nav>
     <div class="nav-wrapper">
       <a href="/" class="brand-logo center">
-        CSS3 Generator - Box Shadow
+        CSS3 Generator - Text Shadow
       </a>
     </div>
   </nav>
 
   <div class="container pt-5">
+    <div class="row">
+      <div class="col s12">
+        <div id="targetContainer" class="textShadow">
+          Target Text
+        </div>
+      </div>
+    </div>
     <div class="row">
       <div class="col s12 m8 offset-m2">
         <div class="card" id="targetContainer">
@@ -27,13 +34,6 @@
               <!-- <h5>Use Range</h5> -->
             </span>
             <form action="#">
-              <div class="input-field">
-                <select id="shadowType"> 
-                  <option value="out" selected>Outset</option>
-                  <option value="in">Inset</option> 
-                </select>
-                <label>Shadow Position</label>
-              </div>
               <p class="range-field">
                 <label>
                   <span>Horizantal Length</span>
@@ -51,17 +51,11 @@
                   <span>Blur Strength</span>
                   <input type="range" id="brStrength" value="5" min="0" max="100" />
                 </label>
-              </p>
-              <p class="range-field">
-                <label>
-                  <span>Spread</span>
-                  <input type="range" id="spread" value="5" min="-100" max="100" />
-                </label>
-              </p>
+              </p> 
               <div class="row">
                 <div class="col s12">
                   <label for="colorCode">Hex Code</label>
-                  <input id="colorCode" shape="poly" type="color" value="#00000088" class="validate active">
+                  <input id="colorCode" type="color" value="#000000" class="validate active">
                 </div>
               </div>
             </form>
@@ -87,6 +81,6 @@
   <!-- Compiled and minified JavaScript -->
   <script src="./assets/materialize/materialize.js"></script>
   <script src="./assets/main.js"></script>
-  <script src="./assets/boxShadow/boxShadow.js"></script>
+  <script src="./assets/textShadow/textShadow.js"></script>
 </body>
 </html>

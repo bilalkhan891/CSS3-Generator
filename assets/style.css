@@ -32,5 +32,32 @@ input[type="color"] {
   transition: all 0.5s ease-in-out;
 }
 .card {
-  background-color: #ffffffb5;
+  background-color: #ffffff26;
+  backdrop-filter: blur(10px);
+  border: solid 2px transparent;
+  background-clip: padding-box;
+}
+
+footer .footer-copyright {
+  position: fixed;
+  width: 100vw;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgb(209, 209, 209);
+}
+footer .footer-copyright a {
+  font-weight: bold;
+  color: rgb(56, 56, 56);
+}
+p.range-field.two-range input {
+  width: calc(50% - 5px);
+}
+
+p.range-field.two-range .title {
+  display: block;
+}
+.textShadow {
+  font-size: 50px;
+  text-align: center;
+  font-weight: bold;
 }
