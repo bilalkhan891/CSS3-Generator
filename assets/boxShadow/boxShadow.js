@@ -1,7 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
-  const elems = document.querySelectorAll('select');
-  M.FormSelect.init(elems);
-});
+
 
 // Get Elements
 const inputs = ["#shadowType", "#hrLength", "#vrLength", "#brStrength", "#spread", "#colorCode"].map(item=>{

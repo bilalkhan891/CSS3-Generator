@@ -5,20 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="./assets/materialize/materialize.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./assets/style.css">
   
-  <title>CSS3 Generator - Box Shadow</title>
+  <title>CSS3 Generator - Outline</title>
 </head>
 <body>
   <nav>
     <div class="nav-wrapper">
       <a href="/" class="brand-logo center">
-        CSS3 Generator - Box Shadow
+        CSS3 Generator - Outline
       </a>
     </div>
   </nav>
 
   <div class="container pt-5">
+     
     <div class="row">
       <div class="col s12 m8 offset-m2">
         <div class="card" id="targetContainer">
@@ -27,43 +29,40 @@
               <!-- <h5>Use Range</h5> -->
             </span>
             <form action="#">
+              <p class="range-field">
+                <label>
+                  <span>Outline Thickness</span>
+                  <input type="range" id="thickness" value="4" min="0" max="20" />
+                </label>
+              </p>
+              <p>
               <div class="input-field">
-                <select id="shadowType"> 
-                  <option value="out" selected>Outset</option>
-                  <option value="in">Inset</option> 
+                <select id="outLine"> 
+                  <option value="Dotted">Dotted</option> 
+                  <option value="Dashed">Dashed</option> 
+                  <option value="Solid">Solid</option> 
+                  <option value="Groove">Groove</option> 
+                  <option value="Ridge">Ridge</option> 
+                  <option value="Inset">Inset</option> 
+                  <option value="Outset">Outset</option> 
+                  <option value="Double">Double</option> 
+                  <option value="Auto">Auto</option> 
                 </select>
-                <label>Shadow Position</label>
+                <label>Outline</label>
               </div>
-              <p class="range-field">
-                <label>
-                  <span>Horizantal Length</span>
-                  <input type="range" id="hrLength" value="5" min="-100" max="100" />
-                </label>
-              </p>
-              <p class="range-field">
-                <label>
-                  <span>Verticle Length</span>
-                  <input type="range" id="vrLength" value="5" min="-100" max="100" />
-                </label>
-              </p>
-              <p class="range-field">
-                <label>
-                  <span>Blur Strength</span>
-                  <input type="range" id="brStrength" value="5" min="0" max="100" />
-                </label>
-              </p>
-              <p class="range-field">
-                <label>
-                  <span>Spread</span>
-                  <input type="range" id="spread" value="5" min="-100" max="100" />
-                </label>
               </p>
               <div class="row">
                 <div class="col s12">
-                  <label for="colorCode">Hex Code</label>
-                  <input id="colorCode" shape="poly" type="color" value="#00000088" class="validate active">
+                  <label for="colorCode">Outline Color</label>
+                  <input id="colorCode" shape="poly" type="color" value="#000000" class="validate active">
                 </div>
               </div>
+              <p class="range-field">
+                <label>
+                  <span>Outline Offset</span>
+                  <input type="range" id="offset" value="0" min="-100" max="100" />
+                </label>
+              </p>  
             </form>
             <div id="cssContainer">
               <div class="cssCode"></div>
@@ -87,6 +86,6 @@
   <!-- Compiled and minified JavaScript -->
   <script src="./assets/materialize/materialize.js"></script>
   <script src="./assets/main.js"></script>
-  <script src="./assets/boxShadow/boxShadow.js"></script>
+  <script src="./assets/outLine/outLine.js"></script>
 </body>
 </html>

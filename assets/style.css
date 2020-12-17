@@ -8,6 +8,18 @@ nav {
 .pt-5 {
   padding-top: 50px;
 }
+.p-3 {
+  padding: 30px;
+}
+.p-2 {
+  padding: 20px;
+}
+.p-1 {
+  padding: 10px;
+}
+.collection-item .circle {
+  border-radius: 0px;
+}
 button#copyCode {
   position: absolute;
   right: 0px;

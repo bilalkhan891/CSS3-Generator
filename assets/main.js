@@ -1,4 +1,5 @@
 // Copy text to clipboard
+if(document.querySelector("#copyCode")) {
 
   document.querySelector("#copyCode").addEventListener("click", (e)=>{
     
@@ -22,3 +23,10 @@
     /* Alert the copied text */
     alert("Copied the text: " + code);
   });
+}
+
+// Materialize Css Init
+document.addEventListener('DOMContentLoaded', function() {
+  const elems = document.querySelectorAll('select');
+  M.FormSelect.init(elems);
+});
