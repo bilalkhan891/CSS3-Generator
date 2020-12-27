@@ -5,13 +5,13 @@ const bs = document.querySelector("#boxShadow"),
       ol = document.querySelector("#outLine");
 
 bs.addEventListener("click", (e)=>{
-window.location = "/boxShadow.html";
+  window.location = "/boxShadow.html";
 });
 tf.addEventListener("click", (e)=> {
-window.location = "/transform.html";
+  window.location = "/transform.html";
 });
 ts.addEventListener("click", (e)=> {
-window.location = "/textShadow.html";
+  window.location = "/textShadow.html";
 });
 ol.addEventListener("click", (e)=> {
   window.location = "/outLine.html";

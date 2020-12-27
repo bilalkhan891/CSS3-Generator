@@ -36,7 +36,7 @@ function updateValues(){
 let render = function(){
   updateValues();
   let style = { 
-    boxShadow: (st !== 'out') ? `inset ${hl}px ${vl}px ${bs}px ${sp}px ${clr}`: `${hl}px ${vl}px ${bs}px ${sp}px ${clr}`
+    boxShadow: (st !== 'out') ? `inset ${hl}px ${vl}px ${bs}px ${sp}px ${clr}`: `${hl}px ${vl}px ${bs}px ${sp}px ${clr}`,
   };
   Object.assign(tContainer.style, style);
 
